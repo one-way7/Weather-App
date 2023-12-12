@@ -1,0 +1,35 @@
+:root {
+  font-size: 62.5%;
+
+  /* colors */
+  --text-color: #71717a;
+  --border-color: rgb(113, 113, 122, 0.5);
+  --body-color: #fafcff;
+  
+
+  /* Font and typography */
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.3rem;
+  --smaller-font-size: 1.2rem;
+
+  /* Font weight */
+  --font-light: 300;
+  --font-medium: 500;
+}
+
+/* base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--body-color);
+  background: url('../assets/images/bg-image.jpg') no-repeat bottom;
+  background-size: cover;
+  /* height: 100vh; */
+}
