@@ -16,7 +16,7 @@ class Api {
         windSpeed: Math.round(current.wind_kph),
         humidity: current.humidity,
         rain: Math.round(current.precip_mm),
-        text: current.condition.text,
+        weatherCondition: current.condition.text,
         iconUrl: current.condition.icon,
       },
       daily: [],
