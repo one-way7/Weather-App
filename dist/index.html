@@ -13,6 +13,44 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <div class="loading hide">
+      <img src="./assets/icons/loader-line.svg" alt="loading icon" width="30">
+    </div>
+    <div class="error hide">
+      <img src="./assets/icons/error-warning-line.svg" alt="loading icon" width="50">
+      <p class="error__text"></p>
+    </div>
+    <div class="current">
+      <div class="current__wrapper">
+        
+      </div>
+    </div>
+
+    <div class="additional">
+      <div class="additional__search">
+        <div class="additional__input">
+          <input type="text" name="city" id="city" required>
+          <label class="additional__label" for="city">Another location</label>
+        </div>
+
+        <div class="additional__button">
+          <img src="./assets/icons/search-line.svg" alt="search icon" width="30">
+        </div>
+      </div>
+
+      <div class="additional__details">
+        <h3 class="additional__header">Weather Details</h3>
+
+        <div class="additional__wrapper"></div>
+      </div>
+
+      <div class="daily__forecast">
+        <div class="daily__wrapper">
+          <div class="daily__item"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
