@@ -8,7 +8,6 @@ class Api {
 
     const processedData = {
       city: location.name,
-      country: location.country,
       current: {
         time: format(new Date(location.localtime), 'hh:mm - cccc, d MMM yyyy'),
         tempC: Math.round(current.temp_c),
@@ -45,7 +44,7 @@ class Api {
 
       return this.#processData(weatherData);
     } catch (error) {
-      return { cod: error.name, message: error.message };
+      return { code: error.name, message: error.message };
     }
   };
 }
