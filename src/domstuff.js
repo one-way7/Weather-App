@@ -15,7 +15,7 @@ class DomStuff {
     }
   };
 
-  renderForecast = ({ city, current }) => {
+  #renderForecast = ({ city, current }) => {
     const currentWrapper = document.querySelector('.current__wrapper');
     const { time, tempC, weatherCondition, iconUrl } = current;
 
@@ -49,7 +49,7 @@ class DomStuff {
       error.classList.add('hide');
       errorMessage.textContent = '';
 
-      this.renderForecast(data);
+      this.#renderForecast(data);
     }
   };
 }
